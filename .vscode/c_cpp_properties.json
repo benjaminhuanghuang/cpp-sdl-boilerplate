@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/local/include/io2d",
+                "/usr/local/Cellar/opencv/4.1.0_2/include/opencv4",
+                "/usr/local/Cellar/sdl2/2.0.9_1/include/SDL2",
+                "/usr/local/Cellar/sdl_ttf/2.0.11_1/include/SDL",
+                "/usr/local/Cellar/sdl2_image/2.0.4/include/SDL2",
+                "/Users/bhuang/clang+llvm-6.0.0-x86_64-apple-darwin/include/c++/v1/"
+            ],
+            "defines": [],
+            "macFrameworkPath": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}
