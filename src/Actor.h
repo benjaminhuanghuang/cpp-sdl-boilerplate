@@ -8,7 +8,7 @@
 
 #pragma once
 #include <vector>
-#include "Math.h"
+#include "GameMath.h"
 
 class Actor
 {

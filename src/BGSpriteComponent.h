@@ -1,7 +1,8 @@
 #pragma once
+
 #include "SpriteComponent.h"
 #include <vector>
-#include "Math.h"
+#include "GameMath.h"
 class BGSpriteComponent : public SpriteComponent
 {
 public:
