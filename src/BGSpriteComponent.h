@@ -3,6 +3,7 @@
 #include "SpriteComponent.h"
 #include <vector>
 #include "GameMath.h"
+
 class BGSpriteComponent : public SpriteComponent
 {
 public:

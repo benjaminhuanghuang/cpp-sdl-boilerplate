@@ -1,7 +1,7 @@
 // ----------------------------------------------------------------
 // From Game Programming in C++ by Sanjay Madhav
 // Copyright (C) 2017 Sanjay Madhav. All rights reserved.
-// 
+//
 // Released under the BSD License
 // See LICENSE in root directory for full details.
 // ----------------------------------------------------------------
@@ -10,18 +10,15 @@
 #include "AnimSpriteComponent.h"
 #include "Game.h"
 
-Ship::Ship(Game* game)
-	:Actor(game)
-	,mRightSpeed(0.0f)
-	,mDownSpeed(0.0f)
+Ship::Ship(Game *game) : Actor(game), mRightSpeed(0.0f), mDownSpeed(0.0f)
 {
 	// Create an animated sprite component
-	AnimSpriteComponent* asc = new AnimSpriteComponent(this);
-	std::vector<SDL_Texture*> anims = {
-		game->GetTexture("Assets/Ship01.png"),
-		game->GetTexture("Assets/Ship02.png"),
-		game->GetTexture("Assets/Ship03.png"),
-		game->GetTexture("Assets/Ship04.png"),
+	AnimSpriteComponent *asc = new AnimSpriteComponent(this);
+	std::vector<SDL_Texture *> anims = {
+			game->GetTexture("Assets/Ship01.png"),
+			game->GetTexture("Assets/Ship02.png"),
+			game->GetTexture("Assets/Ship03.png"),
+			game->GetTexture("Assets/Ship04.png"),
 	};
 	asc->SetAnimTextures(anims);
 }
@@ -53,7 +50,7 @@ void Ship::UpdateActor(float deltaTime)
 	SetPosition(pos);
 }
 
-void Ship::ProcessKeyboard(const uint8_t* state)
+void Ship::ProcessKeyboard(const uint8_t *state)
 {
 	mRightSpeed = 0.0f;
 	mDownSpeed = 0.0f;
