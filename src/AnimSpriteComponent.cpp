@@ -21,7 +21,7 @@ void AnimSpriteComponent::Update(float deltaTime)
 
 	if (mAnimTextures.size() > 0)
 	{
-		// Update the current frame based on frame rate
+		// Update the current frame based on frame rate 
 		// and delta time
 		mCurrFrame += mAnimFPS * deltaTime;
 
