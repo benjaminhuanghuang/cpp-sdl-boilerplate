@@ -13,9 +13,7 @@
 #include "CircleComponent.h"
 #include "Asteroid.h"
 
-Laser::Laser(Game* game)
-	:Actor(game)
-	,mDeathTimer(1.0f)
+Laser::Laser(Game* game) :Actor(game) ,mDeathTimer(1.0f)
 {
 	// Create a sprite component
 	SpriteComponent* sc = new SpriteComponent(this);
