@@ -14,6 +14,9 @@ MoveComponent::MoveComponent(class Actor *owner, int updateOrder) : Component(ow
                                                                     mForwardSpeed(0.0f)
 {}
 
+/*
+overrides the Component::Update function, contains the code that moves the actor
+ */
 void MoveComponent::Update(float deltaTime)
 {
   if (!Math::NearZero(mAngularSpeed))

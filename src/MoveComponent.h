@@ -13,6 +13,7 @@ class MoveComponent : public Component
 {
 public:
 	// Lower update order to update first
+  // MoveComponent will update before most other components do
 	MoveComponent(class Actor* owner, int updateOrder = 10);
 
 	void Update(float deltaTime) override;
@@ -21,7 +22,7 @@ public:
 	float GetForwardSpeed() const { return mForwardSpeed; }
 	void SetAngularSpeed(float speed) { mAngularSpeed = speed; }
 	void SetForwardSpeed(float speed) { mForwardSpeed = speed; }
-  
+
 private:
 	// Controls rotation (radians/second)
 	float mAngularSpeed;
