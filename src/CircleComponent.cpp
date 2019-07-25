@@ -11,9 +11,7 @@
 #include "Actor.h"
 
 CircleComponent::CircleComponent(class Actor* owner) :Component(owner) ,mRadius(0.0f)
-{
-	
-}
+{}
 
 const Vector2& CircleComponent::GetCenter() const
 {
