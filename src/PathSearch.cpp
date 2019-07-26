@@ -15,6 +15,7 @@ struct Graph
 	std::vector<GraphNode *> mNodes;
 };
 
+struct WeightedEdge;
 struct WeightedGraphNode
 {
 	// stores outgoing edges from node
