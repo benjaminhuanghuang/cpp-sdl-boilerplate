@@ -1,7 +1,7 @@
 // ----------------------------------------------------------------
 // From Game Programming in C++ by Sanjay Madhav
 // Copyright (C) 2017 Sanjay Madhav. All rights reserved.
-// 
+//
 // Released under the BSD License
 // See LICENSE in root directory for full details.
 // ----------------------------------------------------------------
@@ -36,13 +36,13 @@ int Random::GetIntRange(int min, int max)
 	return dist(sGenerator);
 }
 
-Vector2 Random::GetVector(const Vector2& min, const Vector2& max)
+Vector2 Random::GetVector(const Vector2 &min, const Vector2 &max)
 {
 	Vector2 r = Vector2(GetFloat(), GetFloat());
 	return min + (max - min) * r;
 }
 
-Vector3 Random::GetVector(const Vector3& min, const Vector3& max)
+Vector3 Random::GetVector(const Vector3 &min, const Vector3 &max)
 {
 	Vector3 r = Vector3(GetFloat(), GetFloat(), GetFloat());
 	return min + (max - min) * r;
